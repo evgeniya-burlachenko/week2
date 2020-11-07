@@ -1,0 +1,43 @@
+{
+	  "https_only": true,
+	  "headers": {
+	    "/*": {
+	      "X-Author":"eaccounted",
+	      "Access-Control-Allow-Origin": "*"
+	    },
+	    
+	    "/login/": {
+	      "Content-Type":"text/plain;charset=UTF-8",
+	      "Access-Control-Allow-Origin": "*"
+	    },
+	    "/sample/": {
+	     "Content-Type": "text/plain; charset=UTF-8",
+	      "Access-Control-Allow-Origin": "*"
+	    }
+	  }
+	}
+	/*Оно является развитием предыдущего задания. 
+	Создайте и сделайте доступным для обращения веб-ресурс, 
+	который по протоколу HTTPS возвращает по маршруту /login/ следующий текст: 
+	eaccounted
+	
+
+	
+
+	При этом заголовок Content-Type должен включать значение text/plain; charset=UTF-8
+	
+
+	и заголовок Access-Control-Allow-Origin должен иметь значение "*"
+	
+
+	По маршруту /sample/ ваш веб-ресурс должен возвращать код (text/plain) функции task
+	от одного аргумента x, которая возвращает произведение аргумента (т.е. имени x) на квадрат своего this-контекста.
+	
+
+	Пример: если бы требовалось преобразовывать аргумент x как строку в верхний регистр, 
+	ответом было бы https://kodaktor.ru/api/sample/
+	
+
+	
+
+	Не забудьте про trailing slash – маршруты должны заканчиваться знаком '/'*/
